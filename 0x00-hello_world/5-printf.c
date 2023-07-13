@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * 
+ * main - entry pt 
  * Description: prints a sentance using puts
  *
  * Return: Always 0 (success)
