@@ -2,7 +2,7 @@
 
 /**
  * main - entry point
- * 
+ *
  * Description: prints a sentance using puts
  *
  * Return: Always 0 (success)
