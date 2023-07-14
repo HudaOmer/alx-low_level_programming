@@ -12,17 +12,7 @@
 int main(void)
 {
 	int i, j, x, y;
-	int print_num(int a, int b, int c, int d)
-	{
-	putchar(a + '0');
-	putchar(b + '0');
-	putchar(' ');
-	putchar(c + '0');
-	putchar(d + '0');
-	putchar(',');
-	return (0);
-	}
-	
+
 	for (i = 0; i < 10 ; i++)
 	{
 		for (j =  0; j < 10; j++)
@@ -31,10 +21,14 @@ int main(void)
 			{
 				for (y = j + 1; y < 10; y++)
 				{
-					print_num(i,j,x,y);
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(' ');
+					putchar(x + '0');
+					putchar(y + '0');
+					putchar(',');
+					putchar(' ');
 				}
-				if(y = 10 && x < 9 )
-					print_num(i,j,x+1,0);
 			}
 		}
 	}
