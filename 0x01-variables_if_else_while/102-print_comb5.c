@@ -11,33 +11,27 @@
 
 int main(void)
 {
-	int i, j, x, y;
-	int print_num(int a, int b, int c, int d)
+	int x, y;
+	int i, j, k, l;
+
+	for (x = 0; x < 99; x++)
 	{
-	putchar(a + '0');
-	putchar(b + '0');
-	putchar(' ');
-	putchar(c + '0');
-	putchar(d + '0');
-	putchar(',');
-	return (0);
-	}
-	
-	for (i = 0; i < 10 ; i++)
-	{
-		for (j =  0; j < 10; j++)
+		for (y = x + 1; y < 100; y++)
 		{
-			for (x =  i; x < 10; x++)
-			{
-				for (y = j + 1; y < 10; y++)
-				{
-					print_num(i,j,x,y);
-				}
-				if(y = 10 && x < 9 )
-					print_num(i,j,x+1,0);
-			}
+			l = y % 10;
+			k = y / 10;
+			j = x % 10;
+			i = x / 10;
+			putchar(i + '0');
+			putchar(j + '0');
+			putchar(' ');
+			putchar(k + '0');
+			putchar(l + '0');
+			putchar(',');
 		}
+
 	}
+
 	putchar('\n');
 	return (0);
 }
