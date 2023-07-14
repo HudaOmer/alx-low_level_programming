@@ -27,7 +27,8 @@ int main(void)
 			putchar(' ');
 			putchar(k + '0');
 			putchar(l + '0');
-			if (x == 98 && y == 99);
+			if (x == 98 && y == 99)
+				;
 			else
 			{
 				putchar(',');
