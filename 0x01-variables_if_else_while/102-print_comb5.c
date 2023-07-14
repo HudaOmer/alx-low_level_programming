@@ -27,10 +27,13 @@ int main(void)
 			putchar(' ');
 			putchar(k + '0');
 			putchar(l + '0');
-			putchar(',');
-			putchar(' ');
+			if (x == 98 && y == 99);
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
-
 	}
 
 	putchar('\n');
