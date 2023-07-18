@@ -8,19 +8,14 @@
  * Return: 1 if lower , 0 if upper
  */
 
-int print_last_digit(int n)
+int print_last_digit(int r)
 {
-	int x;
+	int n;
 
-	if (n >= 0)
-	{
-		x = n % 10;
-	}
+	if (r < 0)
+		n = -1 * (r % 10);
 	else
-	{
-		n = -1 *  n;
-		x = n % 10;
-	}
-	_putchar('0' +( x % 10));
-	return (x % 10);
+		n = r % 10;
+	_putchar((n % 10) + '0');
+	return (n % 10);
 }
