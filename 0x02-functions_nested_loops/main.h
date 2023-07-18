@@ -7,15 +7,4 @@
  */
 
 int _putchar(char c);
-
-int print_alphabet()
-{
-	char alpha;
-
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
-	{
-		_putchar(alpha);
-	}
-	_putchar('\n');
-	return (0);
-}
+void print_alphabet(void);
