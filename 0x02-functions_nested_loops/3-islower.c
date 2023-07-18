@@ -2,7 +2,7 @@
 
 /**
  * _islower - lower and upper
- *
+ * @c: An input character
  * Description: upper and lower
  *
  * Return: 1 if lower , 0 if upper
