@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
-*
-* print_alphabet_x10
+* print_alphabet_x10 - print 10 lines
 *
 * Description: prints 10 lines
 *
