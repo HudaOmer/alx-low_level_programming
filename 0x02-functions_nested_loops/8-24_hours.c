@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - time 
+ * jack_bauer - time
  *
  * Discription: sthi
  *
