@@ -3,12 +3,15 @@
 /**
  * main - check the code
  *
- * Return: Always 0.
+ * Description: prints alphabets
+ *
+ * Return: void.
  */
 
 void print_alphabet(void)
 {
 	char alpha;
+
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
 		_putchar(alpha);
