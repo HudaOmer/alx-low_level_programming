@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - main function
@@ -11,6 +11,6 @@
 
 int main(void)
 {
-	puts("_putchar");
+	my_print("_putchar");
 	return (0);
 }
