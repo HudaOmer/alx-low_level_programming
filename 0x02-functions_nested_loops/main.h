@@ -8,7 +8,7 @@
 
 int _putchar(char c);
 
-print_alphabet()
+int print_alphabet()
 {
 	char alpha;
 
