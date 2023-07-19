@@ -2,7 +2,8 @@
 
 /**
  * add - addition of 2 ints
- * @n1 @n2 two input integers
+ * @n1 input integer
+ * @n2 input integer
  * Description: adds numbers
  *
  * Return: returns the sum
