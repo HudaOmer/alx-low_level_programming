@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - main 
+ * main - main
  * Description: fibonacci
  * Return: 0 Always (success)
  */
@@ -20,6 +20,5 @@ int main(void)
 		arr[i] = arr[i - 1] + arr[i - 2];
 		printf(", %li", arr[i]);
 	}
-	printf(", %li", arr[i]);
 	return (0);
 }
