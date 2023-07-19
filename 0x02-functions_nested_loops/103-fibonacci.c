@@ -24,4 +24,5 @@ int main(void)
 		}
 		sum += arr[i];
 	}
+	return (0);
 }
