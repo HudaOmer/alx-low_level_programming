@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long int *arr;
+	long int arr[50];
 	int i;
 
 	arr[0] = 1;
@@ -20,4 +20,6 @@ int main(void)
 		arr[i] = arr[i - 1] + arr[i - 2];
 		printf(", %li", arr[i]);
 	}
+	printf(", %li", arr[i]);
+	return (0);
 }
