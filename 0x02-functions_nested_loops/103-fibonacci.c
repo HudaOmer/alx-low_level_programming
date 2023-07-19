@@ -18,11 +18,10 @@ int main(void)
 		arr[i] = arr[i - 1] + arr[i - 2];
 		if (arr[i] > 4000000)
 		{
+			printf("%li", sum);
 			printf("\n");
 			return (0);
 		}
 		sum += arr[i];
 	}
-	printf("\n");
-	return (0);
 }
