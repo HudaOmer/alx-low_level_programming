@@ -18,6 +18,11 @@ int main(void)
 	for (i = 2; i < 50; i++)
 	{
 		arr[i] = arr[i - 1] + arr[i - 2];
+		if (arr[i] > 4000000)
+		{
+			printf("\n");
+			return (0);
+		}
 		printf(", %li", arr[i]);
 	}
 	printf("\n");
