@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long int arr[50], sum = 3;
+	long int arr[50], sum = 2;
 	int i;
 
 	arr[0] = 1;
