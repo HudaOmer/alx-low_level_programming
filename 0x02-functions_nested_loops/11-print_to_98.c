@@ -5,13 +5,14 @@
  * print_to_98 - prints numbers
  * @n an int input
  * Description: prints numbers from n to 98 then a line
- * 
- * Return: void*/
+ *
+ * Return: void
+ */
 
 void print_to_98(int n)
 {
 	int i;
-	
+
 	if (n >= 98)
 	{
 		for (i = n; i >= 98; i--)
