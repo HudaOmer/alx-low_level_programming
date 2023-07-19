@@ -1,13 +1,10 @@
 #include "main.h"
-
 /**
  * print_times_table - func
  * @n: inpun int
- * Description: If n is greater than 15 or less than 0 the function should not print anything
- *
+ * Description: If n is greater than 15 or less than 0 the function no
  * Return: void
  */
-
 void print_times_table(int n)
 {
 	int i, j, num;
@@ -25,15 +22,11 @@ void print_times_table(int n)
 				{
 					_putchar(' ');
 					if (num < 10)
-					{
 						_putchar(' ');
-					}
 				}
 			}
 			if (num < 10)
-			{
-			_putchar(num + '0');
-			}
+				_putchar(num + '0');
 			else if (num < 100)
 			{
 			_putchar(num / 10 + '0');
@@ -46,11 +39,8 @@ void print_times_table(int n)
 			_putchar(num % 10 + '0');
 			}
 			if (j != n)
-			{
 				_putchar(',');
-			}
 		}
 		_putchar('\n');
 	}
-
 }
