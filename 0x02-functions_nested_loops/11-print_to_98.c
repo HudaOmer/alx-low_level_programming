@@ -3,7 +3,7 @@
 
 /**
  * print_to_98 - prints numbers
- * @n an int input
+ * @n: an int input
  * Description: prints numbers from n to 98 then a line
  *
  * Return: void
