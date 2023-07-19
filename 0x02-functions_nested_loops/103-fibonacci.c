@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long int arr[50];
+	long int arr[50], sum = 3;
 	int i;
 
 	arr[0] = 1;
@@ -23,7 +23,7 @@ int main(void)
 			printf("\n");
 			return (0);
 		}
-		printf(", %li", arr[i]);
+		sum += arr[i];
 	}
 	printf("\n");
 	return (0);
