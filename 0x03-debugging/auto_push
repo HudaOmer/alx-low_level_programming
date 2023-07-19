@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m 'solve project 3 debugging'
+git push
