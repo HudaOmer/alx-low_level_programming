@@ -9,7 +9,7 @@
 
 void print_number(int n)
 {
-	int i, ten = 1, count = 0, x;
+	unsigned int i, ten = 1, count = 0, x;
 
 	if (n < 0)
 	{
