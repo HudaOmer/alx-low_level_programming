@@ -2,7 +2,7 @@
 
 /**
  * _puts - print sentence
- * @srt: pointer of array
+ * @str: pointer of array
  * Descripton: neck hurts
  *
  * Return: void
