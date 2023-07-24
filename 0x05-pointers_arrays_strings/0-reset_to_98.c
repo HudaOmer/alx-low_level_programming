@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - change value by pointer
- * @*n: a pointer input
+ * @n: a pointer input
  * Description: does the job
  *
  * Return: void
