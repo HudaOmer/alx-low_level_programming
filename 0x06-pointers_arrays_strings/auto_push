@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m "solve project 6"
+git push
