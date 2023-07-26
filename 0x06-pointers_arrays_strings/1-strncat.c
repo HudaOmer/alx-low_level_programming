@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strnca - conctinate a part only
+ * _strncat - conctinate a part only
  * @dest: a pointer to destination array
  * @src: a pointer to source array
  * @n: an input integer indicating how much to append
