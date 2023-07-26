@@ -3,7 +3,7 @@
 /**
  * _strcmp - comparison
  * @s1: pointer to the first string
- * @s3: pointer to the second string
+ * @s2: pointer to the second string
  * Description: compare the stings
  *
  * Return: 0 is equal -15 if s1 is less 15 if s1 is more
@@ -26,5 +26,4 @@ int _strcmp(char *s1, char *s2)
 		return (0);
 	else
 		return (s1[count1] - s2[count1]);
-
 }
