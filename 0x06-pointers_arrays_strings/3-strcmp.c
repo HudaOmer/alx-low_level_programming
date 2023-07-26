@@ -11,15 +11,15 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int count = 0, areequal = 0;
+	int count = 0, arequal = 0;
 
-	while (areequal == 0)
+	while (arequal == 0)
 		{
 			if ((*(s1 + count) == '\0') && (*(s2 + count) == '\0'))
 				break;
-			areequal = *(s1 + count) - *(s2 + count);
+			arequal = *(s1 + count) - *(s2 + count);
 			count++;
 		}
 
-	return (areequal);
+	return (arequal);
 }
