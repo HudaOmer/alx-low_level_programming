@@ -2,11 +2,11 @@
 
 /**
  * _strcat - concatinate
- * @dest: pointer to destinaion* array
+ * @dest: pointer to destinaion array
  * @src: pointer to sourcce array
- * Description: append dest into srcc
+ * Description: append src into dest
  *
- * Return pointer to the source
+ * Return: pointer to the source
  */
 
 char *_strcat(char *dest, char *src)
@@ -16,7 +16,7 @@ char *_strcat(char *dest, char *src)
 	{
 		count++;
 	}
-	while(src[i] != '\0')
+	while (src[i] != '\0')
 	{
 		*(dest + count) = src[i];
 		i++;
