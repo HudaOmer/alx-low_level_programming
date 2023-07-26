@@ -15,9 +15,9 @@ int _strcmp(char *s1, char *s2)
 
 	while (areequal == 0)
 		{
-			if ((s1[count] == '\0') && (s2[count] == '\0'))
+			if ((*(s1 + count) == '\0') && (*(s2 + count) == '\0'))
 				break;
-			areequal = s1[count] - s2[count];
+			areequal = *(s1 + count) - *(s2 + count);
 			count++;
 		}
 
