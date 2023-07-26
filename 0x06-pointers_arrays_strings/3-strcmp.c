@@ -11,19 +11,16 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int count1 = 0, areequal = 1;
+	int count1 = 0, areequal = 0;
 
 	while (s1[count1] != '\0' && s2[count1] != '\0')
 		{
 			if (s1[count1] != s2[count1])
 			{
-				areequal = 0;
+				areequal = s1[count1] - s2[count1];
 				break;
 			}
 			count1++;
 		}
-	if (areequal)
-		return (0);
-	else
-		return (s1[count1] - s2[count1]);
+	return (areequal);
 }
