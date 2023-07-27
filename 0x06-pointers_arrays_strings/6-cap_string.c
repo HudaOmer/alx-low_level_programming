@@ -2,19 +2,19 @@
 
 \**
  * cap_string - capitalize
- * @n: pointer to array
+ * @s: pointer to array
  *
  * Return: pointer to the string
  *\
 
-char *cap_string(char *n)
+char *cap_string(char *s)
 {
 	int count = 0;
 
-  	while (n[count] != '\0')
+  	while (s[count] != '\0')
  	 {
-   		 if (n[count] == ' ' && n[count + 1] >= 'a' && n[count + 1] <= 'z')
-    	 		 n[count + 1] = n[count + 1] - 32;
+   		 if (s[count] == ' ' && s[count + 1] >= 'a' && s[count + 1] <= 'z')
+    	 		 s[count + 1] = s[count + 1] - 32;
    		 count++;        
 	  }
 	  return (n);
