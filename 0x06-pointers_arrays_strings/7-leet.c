@@ -15,10 +15,8 @@ char *leet(char *s)
 	while (s[count] != '\0')
 	{
 		for (i = 0; i < 10; i++)
-		{
 			if (s[count] == leet[i])
 				s[count] = rep[i];
-		}
 		count++;
 	}
 	return (s);
