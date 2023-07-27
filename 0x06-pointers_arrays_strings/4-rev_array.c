@@ -5,7 +5,7 @@
  * @a: pointer to int a array
  * @n: poimter to int b size of array
  * Description: reverses the content of an array of integers
- * 
+ *
  * Return: void
  */
 
