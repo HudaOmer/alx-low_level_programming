@@ -19,5 +19,6 @@ char *leet(char *s)
 				s[count] = rep[i];
 		count++;
 	}
+
 	return (s);
 }
