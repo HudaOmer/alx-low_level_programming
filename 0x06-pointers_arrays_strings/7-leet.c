@@ -8,44 +8,16 @@
 
 char *leet(char *s)
 {
-	int count;
+	int count = 0, i;
+	char leet[] = {'a','A','e','E','o','O','t','T','l','L'};
+	char rep[] = {'4','4','3','3','0','0','7','7','1','1'};
 
 	while (s[count] != '\0')
 	{
-		switch (s[count])
+		for (i = 0; i < 10; i++)
 		{
-			case 'a':
-				s[count] = '4';
-				break;
-			case 'A':
-				s[count] = '4';
-				break;
-			case 'e':
-				s[count] = '3';
-				break;
-			case 'E':
-				s[count] = '3';
-				break;
-			case 'o':
-				s[count] = '0';
-				break;
-			case 'O':
-				s[count] = '0';
-				break;
-			case 't':
-				s[count] = '7';
-				break;
-			case 'T':
-				s[count] = '7';
-				break;
-			case 'l':
-				s[count] = '1';
-				break;
-			case 'L':
-				s[count] = '1';
-				break;
-			default:
-				break;
+			if (s[count] == leet[i])
+				s[count] = rep[i];
 		}
 		count++;
 	}
