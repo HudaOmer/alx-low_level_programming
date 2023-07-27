@@ -1,11 +1,11 @@
 #include "main.h"
 
 \**
-  * cap_string - capitalize
-  *@n: pointer to array
-  *
-  *Return: pointer to the string
-  *\
+ * cap_string - capitalize
+ * @n: pointer to array
+ *
+ * Return: pointer to the string
+ *\
 
 char *cap_string(char *n)
 {
