@@ -3,7 +3,7 @@
 /**
  * reverse_array - reverse
  * @a: pointer to int a array
- * @b: poimter to int b size of array
+ * @n: poimter to int b size of array
  * Description: reverses the content of an array of integers
  * 
  * Return: void
@@ -12,10 +12,14 @@
 void reverse_array(int *a, int n)
 {
 	unsigned int temp;
-	int i = 0;
+	int i = 0, m;
 
 	n--;
-	while (i <= n / 2)
+	if (n % 2 != 0)
+		m = n / 2;
+	else
+		m = (n + 1) / 2;
+	while (i <= m)
 	{
 		temp = a[i];
 		a[i] = a[n];
