@@ -17,8 +17,10 @@ char *cap_string(char *s)
 	while (s[count] != '\0')
 	{
 		for (i = 0; i < 13; i++)
-			if ((s[count] == sep_words[i]) && s[count + 1] >= 'a' && s[count + 1] <= 'z')
+		{
+			if (s[count] == sep_words[i] && s[count + 1] >= 'a' && s[count + 1] <= 'z')
 				s[count + 1] = s[count + 1] - 32;
+		}
 		count++;
 	}
 	return (s);
