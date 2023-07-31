@@ -11,7 +11,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	unsigned int j, i = 0;
 
-	while ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+	while (s[i] != '\0')
 	{
 		for (j = 0; accept[j] != '\0'; j++)
 			if (accept[j] == s[i])
