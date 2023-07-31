@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * _strspn - function
+ * @s: array to look in
+ * @accept: array to search for
+ * Return: no of occurances*/
 
 unsigned int _strspn(char *s, char *accept)
 {
