@@ -1,6 +1,7 @@
 #include "main.h"
 
-/**wildcmp - compare
+/**
+ * wildcmp - compare
  * @s1: string
  * @s2: string
  * Return: 0 , 1
