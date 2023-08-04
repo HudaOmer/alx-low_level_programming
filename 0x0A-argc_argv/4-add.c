@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 		{
 			if (!isdigit(argv[i][not]))
 			{
-				printf("Error\n, %d\n", sum);
+				printf("Error\n");
 				return (1);
 			}
 			not++;
