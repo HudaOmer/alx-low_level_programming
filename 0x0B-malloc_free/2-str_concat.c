@@ -46,7 +46,6 @@ char *str_concat(char *s1, char *s2)
 			*(s + i) = *s1;
 			s1++;
 			i++;
-			printf("%c", *s1);
 		}
 	if (s2 != NULL)
 		while (*s2 != '\0')
