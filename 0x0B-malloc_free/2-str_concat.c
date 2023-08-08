@@ -32,12 +32,9 @@ char *str_concat(char *s1, char *s2)
 	char *s;
 	int i = 0, size = 0;
 
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
-
 	size = _size(s1) + _size(s2) + 1;
 	s = malloc(sizeof(char) * size);
-	
+
 	if (s == NULL)
 		return (NULL);
 	if (s1 != NULL)
@@ -55,5 +52,6 @@ char *str_concat(char *s1, char *s2)
 			s2++;
 			i++;
 		}
+	*(s + i) = '\0';
 	return	(s);
 }
