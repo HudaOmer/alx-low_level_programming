@@ -2,7 +2,11 @@
 #include <stdlib.h>
 
 /**
- * argstostr - */
+ * argstostr - concatinate
+ * @ac: arguments count
+ * @av: arguments vector
+ * Return: new concatinated string
+ */
 
 char *argstostr(int ac, char **av)
 {
@@ -18,9 +22,12 @@ char *argstostr(int ac, char **av)
 			count++;
 	}
 
-	s = malloc(sizeof(char) * (count + 1));
+	s = malloc(sizeof(char) * (count + 1 + ac));
 	if (s == NULL)
+	{
+		free(s);
 		return (NULL);
+	}
 
 	for (i = 0; i < ac; i++)
 	{
