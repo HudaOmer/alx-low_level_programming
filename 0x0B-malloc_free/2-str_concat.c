@@ -18,7 +18,7 @@ int _size(char *s)
 			count++;
 			i++;
 		}
-	else 
+	else
 		return (0);
 	return (count);
 }
