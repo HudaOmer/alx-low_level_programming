@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-dfv
+
 /**
  * alloc_grid - allocate 2d array
  * @width: input
