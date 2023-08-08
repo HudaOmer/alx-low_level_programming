@@ -12,11 +12,14 @@ int _size(char *s)
 {
 	int i = 0, count = 0;
 
-	while (*(s + i) != '\0')
-	{
-		count++;
-		i++;
-	}
+	if (s != NULL)
+		while (*(s + i) != '\0')
+		{
+			count++;
+			i++;
+		}
+	else 
+		return (0);
 	return (count);
 }
 
@@ -37,19 +40,21 @@ char *str_concat(char *s1, char *s2)
 
 	if (s == NULL)
 		return (NULL);
-	while (*s1 != '\0')
-	{
-		*(s + i) = *s1;
-		s1++;
-		i++;
-	}
-
-	while (*s2 != '\0')
-	{
-		*(s + i) = *s2;
-		s2++;
-		i++;
-	}
+	if (s1 != NULL)
+		while (*s1 != '\0')
+		{
+			*(s + i) = *s1;
+			s1++;
+			i++;
+			printf("%c", *s1);
+		}
+	if (s2 != NULL)
+		while (*s2 != '\0')
+		{
+			*(s + i) = *s2;
+			s2++;
+			i++;
+		}
 	*(s + i) = '\0';
 	return	(s);
 }
