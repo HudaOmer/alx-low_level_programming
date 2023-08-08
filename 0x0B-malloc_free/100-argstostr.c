@@ -18,6 +18,8 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
+		if (av[i] == NULL)
+			return (NULL);
 		for (j = 0; av[i][j] != '\0'; j++)
 			count++;
 	}
@@ -36,5 +38,6 @@ char *argstostr(int ac, char **av)
 		*(s + x) = '\n';
 		x++;
 	}
+	*(s + x) = '\0';
 	return (s);
 }
