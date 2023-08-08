@@ -37,21 +37,19 @@ char *str_concat(char *s1, char *s2)
 
 	if (s == NULL)
 		return (NULL);
-	if (s1 != NULL)
-		while (*s1 != '\0')
-		{
-			*(s + i) = *s1;
-			s1++;
-			i++;
-		}
+	while (*s1 != '\0')
+	{
+		*(s + i) = *s1;
+		s1++;
+		i++;
+	}
 
-	if (s2 != NULL)
-		while (*s2 != '\0')
-		{
-			*(s + i) = *s2;
-			s2++;
-			i++;
-		}
+	while (*s2 != '\0')
+	{
+		*(s + i) = *s2;
+		s2++;
+		i++;
+	}
 	*(s + i) = '\0';
 	return	(s);
 }
