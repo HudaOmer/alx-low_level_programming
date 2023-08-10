@@ -32,10 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	i = 0;
 	if (s == NULL)
-	{
-		free(s);
 		return (NULL);
-	}
 	if (s1 != NULL)
 		while (*s1 != '\0' && size != 0)
 		{
