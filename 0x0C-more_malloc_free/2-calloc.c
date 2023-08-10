@@ -3,7 +3,7 @@
 
 /**
  * _calloc - function
- * @nmemb:
+ * @nmemb: oh
  * @size: the size
  * Return:  pointer to the allocated memory.
  */
