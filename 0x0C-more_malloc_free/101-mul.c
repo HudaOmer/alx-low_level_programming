@@ -1,21 +1,22 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
-#include <ctype.h>
+
 /**
  * is_digit - checks if a string contains a non-digit char
  * @s: string to be evaluated
  *
  * Return: 0 if a non-digit is found, 1 otherwise
  */
-
 int is_digit(char *s)
 {
-	while (*s != '\0')
+	int i = 0;
+
+	while (s[i])
 	{
-		if (isdigit(*s))
+		if (s[i] < '0' || s[i] > '9')
 			return (0);
-		s++;
+		i++;
 	}
 	return (1);
 }
@@ -26,19 +27,20 @@ int is_digit(char *s)
  *
  * Return: the length of the string
  */
-
 int _strlen(char *s)
 {
-	int i;
-	for (i = 0; s[i] != '\0'; i++)
-		;
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
 	return (i);
 }
 
 /**
  * errors - handles errors for main
  */
-
 void errors(void)
 {
 	printf("Error\n");
@@ -52,7 +54,6 @@ void errors(void)
  *
  * Return: always 0 (Success)
  */
-
 int main(int argc, char *argv[])
 {
 	char *s1, *s2;
