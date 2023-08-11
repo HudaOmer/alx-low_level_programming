@@ -4,7 +4,8 @@
 #include <ctype.h>
 
 /**
- * isnum - 
+ * isnum - a function
+ * @s: array to check if it is numbers only
  * Return: 1 if not, 0 success
  */
 int isnum(char *s)
