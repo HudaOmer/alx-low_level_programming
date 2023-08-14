@@ -6,6 +6,8 @@
  * @name: string
  * @age: float
  * @owner: string
+ *
+ * Description: sth
  */
 
 struct dog
