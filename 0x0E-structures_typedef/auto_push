@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m 'solve 0x0E-structures_typedef pjt 14'
+git push
