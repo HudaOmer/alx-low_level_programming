@@ -8,7 +8,6 @@
  * @owner: string
  * Description: sth
  */
-
 struct dog
 {
 	char *name;
@@ -19,7 +18,6 @@ struct dog
 /**
  * dog_t - type for struct dog
  */
-
 typedef struct dog dog_t;
 
 #endif
