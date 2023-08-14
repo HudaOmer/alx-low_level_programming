@@ -5,10 +5,8 @@
  * _strlen - return length of a string
  * @s: points to array of chars
  * Descripyion: does the job
- *
  * Return: the length
  */
-
 int _strlen(char *s)
 {
 	int count = 0;
@@ -16,7 +14,6 @@ int _strlen(char *s)
 	while (*(s + count) != '\0')
 		count++;
 	return (count);
-
 }
 
 /**
@@ -24,10 +21,8 @@ int _strlen(char *s)
  * @src: source string
  * @dest: destination
  * Description: does the job
- *
  * Return: the pointer to dest
  */
-
 char *_strcpy(char *dest, char *src)
 {
 	int i, count = 0;
@@ -41,7 +36,7 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
- * new_dog create
+ * new_dog - create
  * @name: string
  * @age: float
  * @owner: string
