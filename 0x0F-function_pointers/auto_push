@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m 'solve recursion pjt 8'
+git commit -m 'solve pointers to functions pjt'
 git push
