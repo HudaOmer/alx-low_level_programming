@@ -5,6 +5,7 @@
  * the operation asked by the user
  * @a: int
  * @b: int
+ * @s: the thinf I have forgoten
  * Return: pointer to function
  */
 
