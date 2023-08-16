@@ -3,7 +3,7 @@
 
 /**
  * array_iterator - print array
- * @size: of array 
+ * @size: of array
  * @action: pointer to function
  * @array: of elements
  * Return: nothing
