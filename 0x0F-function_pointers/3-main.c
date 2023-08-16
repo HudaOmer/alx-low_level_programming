@@ -1,6 +1,4 @@
 #include "3-calc.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * main - main function
@@ -22,7 +20,7 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 	action = get_op_func(argv[2]);
-	if (!action || argv[2][1])
+	if (!action)
 	{
 		printf("Error\n");
 		exit(99);
