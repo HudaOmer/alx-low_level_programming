@@ -12,9 +12,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	oh = n;
 	if (oh == 0)
-	{
 		return (0);
-	}
 	va_start(variadic, n);
 	while (oh)
 	{
