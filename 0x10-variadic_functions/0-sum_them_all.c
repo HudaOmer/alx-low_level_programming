@@ -17,5 +17,5 @@ int sum_them_all(const unsigned int n, ...)
 	for (oh = 0; oh < n; oh++)
 		sum += va_arg(variadic, int);
 	va_end(variadic);
-	return (0);
+	return (sum);
 }
