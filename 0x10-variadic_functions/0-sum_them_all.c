@@ -11,15 +11,11 @@ int sum_them_all(const unsigned int n, ...)
 	int sum = 0;
 	va_list variadic;
 
-	oh = n;
-	if (oh == 0)
+	if (n == 0)
 		return (0);
 	va_start(variadic, n);
-	while (oh)
-	{
+	for (oh = 0; oh < n; oh++)
 		sum += va_arg(variadic, int);
-		oh--;
-	}
 	va_end(variadic);
 	return (sum);
 }
