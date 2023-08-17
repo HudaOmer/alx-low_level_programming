@@ -9,7 +9,7 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int oh, sum = 0;
-	va_list variadic; 
+	va_list variadic;
 
 	oh = n;
 	if (oh == 0)
