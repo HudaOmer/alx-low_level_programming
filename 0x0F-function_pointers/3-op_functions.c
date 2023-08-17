@@ -12,7 +12,7 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - add numbers
+ * op_sub - sub numbers
  * @a: int
  * @b: int
  * Return: differance
@@ -23,7 +23,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - add numbers
+ * op_mul - mul numbers
  * @a: int
  * @b: int
  * Return: product
@@ -34,7 +34,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - add numbers
+ * op_div - div numbers
  * @a: int
  * @b: int
  * Return: result of devision
@@ -50,7 +50,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - add numbers
+ * op_mod - mod numbers
  * @a: int
  * @b: int
  * Return: reminder of devision

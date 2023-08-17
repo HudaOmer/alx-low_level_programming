@@ -2,14 +2,11 @@
 
 /**
  * get_op_func - selects the correct function to perform
- * the operation asked by the user
- * @a: int
- * @b: int
  * @s: the thinf I have forgoten
  * Return: pointer to function
  */
 
-int (*get_op_func(char *s))(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
