@@ -10,13 +10,18 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list mylist;
+	char *check;
 	unsigned int count;
 
 	va_start(mylist, n);
 
 	for (count = 0; count < n; count++)
 	{
-		printf("%s", va_arg(mylist, char *));
+		check = va_arg(mylist, char *);
+		if (check)
+			printf("%s", check);
+		else
+			printf("(nill)");
 		if (separator && count < n - 1)
 			printf("%s", separator);
 	}
