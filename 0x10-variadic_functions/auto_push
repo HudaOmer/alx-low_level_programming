@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m 'solve 0x10-variadic_functions pjt 16'
+git push
