@@ -22,5 +22,6 @@ int sum_them_all(const unsigned int n, ...)
 		sum += va_arg(variadic, int);
 		oh--;
 	}
+	va_end(variadic);
 	return (sum);
 }
