@@ -1,4 +1,4 @@
-#include <stdarg.h>
+#include "variadic_functions.h"
 
 /**
  * print_numbers - orint withs separator
