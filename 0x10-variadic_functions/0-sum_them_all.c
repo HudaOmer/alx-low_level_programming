@@ -1,4 +1,4 @@
-#include "variadic_functions.h"
+#include <strarg.h>
 
 /**
  * sum_them_all - returns the sum of parameters.
