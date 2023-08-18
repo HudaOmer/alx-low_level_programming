@@ -8,13 +8,15 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list mylist;
 	unsigned int count;
 	int sum = 0;
+	va_list mylist;
 
 	va_start(mylist, n);
+
 	for (count = 0; count < n; count++)
 		sum += va_arg(mylist, int);
+
 	va_end(mylist);
 	return (sum);
 }
