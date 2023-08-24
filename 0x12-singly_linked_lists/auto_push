@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m 'solve pjt 18 singular linked listes'
+git push
