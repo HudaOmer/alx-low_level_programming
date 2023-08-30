@@ -9,8 +9,8 @@
 size_t free_listint_safe(listint_t **h)
 {
 	int isloop;
-	listint_t = *loop;
 	size_t length = 0;
+	listint_t *loop;
 
 	if (!h || !*h)
 		return (0);
