@@ -12,8 +12,6 @@ size_t print_listint_safe(const listint_t *head)
 	const listint_t *p1 = head, *p2 = head;
 	int flag = 0;
 
-	if (!head)
-		exit(98);
 	while (p2 && p2->next)
 	{
 		printf("[%p] %d\n", (void *)p1, p1->n), nodes++;
