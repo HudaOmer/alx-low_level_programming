@@ -9,8 +9,11 @@
 
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *p1 = head, *p2 = head;
+	listint_t *p1 = head;
+	listint_t *p2 = head;
 
+	if (!head)
+		return (NULL);
 	while (p2 && p2->next)
 	{
 		p1 = p1->next;
