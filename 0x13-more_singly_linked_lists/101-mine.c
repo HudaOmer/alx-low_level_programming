@@ -14,8 +14,7 @@ size_t print_listint_safe(const listint_t *head)
 
 	while (p2 && p2->next)
 	{
-		printf("[%p] %d\n", (void *)p1, p1->n);
-		nodes++;
+		printf("[%p] %d\n", (void *)p1, p1->n), nodes++;
 		p1 = p1->next;
 		p2 = p2->next->next;
 		if (p1 == p2)
@@ -29,14 +28,12 @@ size_t print_listint_safe(const listint_t *head)
 		p1 = head;
 		while (p1->next != p2->next)
 		{
-			printf("[%p] %d\n", (void *)p2, p2->n);
-			nodes++;
+			printf("[%p] %d\n", (void *)p2, p2->n), nodes++;
 			p1 = p1->next;
 			p2 = p2->next;
 		}
 
-		printf("[%p] %d\n", (void *)p2, p2->n);
-		nodes++;
+		printf("[%p] %d\n", (void *)p2, p2->n), nodes++;
 		printf("-> [%p] %d\n", (void *)p2->next, p2->next->n);
 	}
 	else
@@ -44,10 +41,8 @@ size_t print_listint_safe(const listint_t *head)
 		while (p1)
 		{
 			printf("[%p] %d\n", (void *)p1, p1->n);
-			p1 = p1->next;
+			p1 = p1->next, nodes++;
 		}
-		if (!p1)
-			exit(98);
 	}
 	return (nodes);
 }
