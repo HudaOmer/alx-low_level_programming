@@ -30,12 +30,14 @@ size_t print_listint_safe(const listint_t *head)
 		while (p1->next != p2->next)
 		{
 			printf("[%p] %d\n", (void *)p2, p2->n);
+			nodes++;
 			p1 = p1->next;
 			p2 = p2->next;
 		}
 
 		printf("[%p] %d\n", (void *)p2, p2->n);
 		nodes++;
+		printf("-> [%p] %d\n", (void *)p2->next, p2->next->n);
 	}
 	else
 	{
