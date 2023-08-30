@@ -4,30 +4,37 @@
  * find_listint_loop - detect loop
  * @head: list to search at
  * Return: The address of the node where the loop starts,
- * or NULL if there is no loop
  */
 
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *p1 = head;
-	listint_t *p2 = head;
+	listint_t *p2;
+	listint_t *prev;
 
-	if (!head)
-		return (NULL);
-
-	while (p1 && p2 && p2->next)
+	p2 = head;
+	prev = head;
+	while (head && p2 && p2->next)
 	{
-		p1 = p1->next;
+		head = head->next;
 		p2 = p2->next->next;
-		if (p1 == p2)
+
+		if (head == p2)
 		{
-			p1 = head;
-			while (p1->next != p2->next)
+			head = prev;
+			prev =  p2;
+			while (1)
 			{
-				p1 = p1->next;
-				p2 = p2->next;
+				p2 = prev;
+				while (p2->next != head && p2->next != prev)
+				{
+					p2 = p2->next;
+				}
+				if (p2->next == head)
+					break;
+
+				head = head->next;
 			}
-			return (p1->next);
+			return (p2->next);
 		}
 	}
 
