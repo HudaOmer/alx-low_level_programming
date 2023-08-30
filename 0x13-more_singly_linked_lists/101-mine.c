@@ -40,8 +40,8 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		while (p1)
 		{
-			printf("[%p] %d\n", (void *)p1, p1->n);
-			p1 = p1->next, nodes++;
+			printf("[%p] %d\n", (void *)p1, p1->n), nodes++;
+			p1 = p1->next;
 		}
 	}
 	return (nodes);
