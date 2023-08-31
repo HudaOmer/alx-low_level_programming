@@ -27,10 +27,11 @@ int _strlen(const char *s)
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int decimal = 0, two = 1;
-	int len, length = _strlen(b);
+	int len, length;
 
 	if (!b)
 		return (0);
+	length = _strlen(b);
 	len = length - 1;
 	while (len)
 	{
