@@ -27,28 +27,22 @@ int _strlen(const char *s)
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int decimal = 0, two = 1;
-	int len, length;
+	int length;
 
 	if (!b)
 		return (0);
-	length = _strlen(b);
-	len = length - 1;
-	while (len)
+	
+	length = _strlen(b) - 1;
+	while (*(b + length))
 	{
-		two *= 2;
-		len--;
-	}
-	while (length)
-	{
-		if (*b == '1')
+		if (*(b + length) == '1')
 			decimal += two;
-		else if (*b == '0')
+		else if (*(b + length) == '0')
 			;
 		else
 			return (0);
-		two /= 2;
+		two *= 2;
 		length--;
-		b++;
 	}
 	return (decimal);
 }
