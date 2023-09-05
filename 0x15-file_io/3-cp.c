@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * error_file - checks if files can be opened.
- * @file_from: file_from.
- * @file_to: file_to.
- * @argv: arguments vector.
- * Return: no return.
+ * checkfile - checks
+ * @file_from: first
+ * @file_to: second
+ * @argv: from main Argument vector
+ * Return: nothing
  */
-void error_file(int file_from, int file_to, char *argv[])
+void checkfile(int file_from, int file_to, char **argv)
 {
 	if (file_from == -1)
 	{
@@ -22,50 +22,55 @@ void error_file(int file_from, int file_to, char *argv[])
 }
 
 /**
- * main - check the code for ALX students.
- * @argc: number of arguments.
- * @argv: arguments vector.
- * Return: Always 0.
+ * checkclose - closes file
+ * @file1: file to close
+ * @file2:file from
+ * Return: nothing
  */
-int main(int argc, char *argv[])
+void checkclose(int file1,int file2)
 {
-	int file_from, file_to, err_close;
-	ssize_t nchars, nwr;
-	char buf[1024];
+	int err_close;
+
+	err_close = close(file1);
+	if (err_close == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file2);
+		exit(100);
+	}
+}
+
+/**
+ * main - main function
+ * @argc: Argument count
+ * @argv: Argument vector
+ * Return: 0 always (Sucess)
+ */
+int main(int argc, char **argv)
+{
+	int file_from, file_to;
+	ssize_t r, w;
+	char buffer[1024];
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to");
 		exit(97);
 	}
-
 	file_from = open(argv[1], O_RDONLY);
-	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	error_file(file_from, file_to, argv);
+	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	checkfile(file_from, file_to, argv);
 
-	nchars = 1024;
-	while (nchars == 1024)
+	r = 1024;
+	while (r == 1024)
 	{
-		nchars = read(file_from, buf, 1024);
-		if (nchars == -1)
-			error_file(-1, 0, argv);
-		nwr = write(file_to, buf, nchars);
-		if (nwr == -1)
-			error_file(0, -1, argv);
+		r = read(file_from, buffer, 1024);
+		if (r == -1)
+			checkfile(-1, 0, argv);
+		w = write(file_to, buffer, r);
+		if (w == -1)
+			checkfile(0, -1, argv);
 	}
-
-	err_close = close(file_from);
-	if (err_close == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
-		exit(100);
-	}
-
-	err_close = close(file_to);
-	if (err_close == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
-		exit(100);
-	}
+	checkclose(file_from,file_from);
+	checkclose(file_to,file_from);
 	return (0);
 }
