@@ -9,9 +9,9 @@
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *loop = *head;
-  int i;
+	int i;
 
-	if (!head || !*head)
+	if (!head || !(*head))
 		return (-1);
 
 	for (i = 0; i < index && loop; i++)
