@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -shared -o myprintf.so -fPIC test.c
-export LD_PRELOAD=./myprintf.so:$LD_LIBRARY_PATH
+wget -P /tmp/ https://github.com/HudaOmer/alx-low_level_programming/blob/master/0x18-dynamic_libraries/makewin.so
+export LD_PRELOAD=/tmp/makewin.so
