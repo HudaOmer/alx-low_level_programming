@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -p /tmp/ https://github.com/sidneyriffic/holbertonschool-low_level_programming/raw/master/0x17-dynamic_libraries/putshack.so
-export LD_PRELOAD=/tmp/random.so
+gcc -shared -o myprintf.so -fPIC print.c
+export LD_PRELOAD=./myprintf.so:LD_LIBRARY_PATH
