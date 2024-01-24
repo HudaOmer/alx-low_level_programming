@@ -7,7 +7,7 @@ NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 #run only updated files
-all: $(OBJ)
+all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean:
 	$(RM) *~ $(NAME)
