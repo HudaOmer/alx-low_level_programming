@@ -4,6 +4,8 @@
 
 def island_perimeter(grid):
     """A function that counts the perimeter of an island"""
+    if not grid:
+        return 0
     rows = len(grid)
     columns = len(grid[0])
     result = 0
