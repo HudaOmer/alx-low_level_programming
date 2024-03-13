@@ -4,7 +4,7 @@
  * linear_search - a function that searches for a value in an array of ints
  *
  * Description: Every time you compare a value in the array to the value you
- * are searching, you have to print this value 
+ * are searching, you have to print this value
  *
  * @array: is a pointer to the first element of the array to search in
  * @size: is the number of elements in array
